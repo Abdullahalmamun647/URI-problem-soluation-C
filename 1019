@@ -1,0 +1,27 @@
+
+// problem 1019= Time Conversion
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n,hour,munite,sec;
+  
+    scanf("%d",&n);
+    
+    hour=n/3600;
+    n=n%3600;
+    munite=n/60;
+    sec=(n%3600)%60;
+    printf("%d:%d:%d\n",hour,munite,sec);
+
+
+
+    return 0;
+}
+    
+    
+    
+

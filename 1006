@@ -1,0 +1,25 @@
+// problem 1006= Average 2
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    double A,B,C,Average;
+   
+    scanf("%lf",&A);
+    scanf("%lf",&B);
+    scanf("%lf",&C);
+
+    Average= (A*2)+(B*3)+(C*5);
+    Average/=10;                // that means like Average=Average/11;
+    
+    
+    
+    printf("MEDIA = %.1f\n",Average);
+    
+
+    return 0;
+}
+

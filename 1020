@@ -1,0 +1,28 @@
+
+// problem 1020= Age in Days
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+    int n,year,month,day;
+    scanf("%d",&n);
+    
+    year=n/365;
+    n=n%365;
+    month=n/30;
+    n=n%30;
+    day=(n%60);
+    printf("%d ano(s)\n",year);
+    printf("%d mes(es)\n",month);
+    printf("%d dia(s)\n",day);
+
+
+    return 0;
+}
+
+
+
+

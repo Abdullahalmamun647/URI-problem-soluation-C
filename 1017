@@ -1,0 +1,22 @@
+
+// problem 1017= Fuel Spent
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+#include <stdio.h>
+#include <stdlib.h>
+int main ()
+{
+    int hour,distance;
+    double fuel;
+    scanf("%d",&hour);
+    scanf("%d",&distance);
+    
+    fuel=(distance/12.00);
+    fuel*=hour;
+    
+    
+    printf("%.3f\n",fuel);
+    
+    return 0;
+}

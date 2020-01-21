@@ -1,0 +1,22 @@
+// problem 1010= Simple Calculate
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    int num1,unit1,num2,unit2;
+    double price1,price2,Paid;
+    
+    scanf("%d %d %lf",&num1,&unit1,&price1);
+    scanf("%d %d %lf",&num2,&unit2,&price2);
+    
+    Paid= (unit1*price1)+ (unit2*price2);
+    
+    printf("VALOR A PAGAR: R$ %.2f\n",Paid);
+    
+
+    return 0;
+}
+

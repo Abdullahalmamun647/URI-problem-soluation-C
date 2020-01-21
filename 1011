@@ -1,0 +1,18 @@
+// problem 1011= Sphere
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+    double pi=3.14159,R,sum;
+    scanf("%lf",&R);
+    R=pow(R,3);
+    sum=(4/3.0)*pi*R;
+
+    printf("VOLUME = %.3f\n",sum);
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+// problem 1009= Salary with Bonus
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    char name [20];
+    double sl, sell, to_salary;
+    
+    
+     scanf("%s",name);
+     scanf("%lf",&sl);
+     scanf("%lf",&sell);
+    
+    to_salary= (sell*15)/100+sl;
+  
+    printf("TOTAL = R$ %.2f\n",to_salary);
+    
+    return 0;
+}
+

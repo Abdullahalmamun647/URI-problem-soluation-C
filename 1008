@@ -1,0 +1,26 @@
+// problem 1008= Salary
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    int  Emp_N,hour;
+    double salary;
+    
+    
+     scanf("%d",&Emp_N);
+     scanf("%d",&hour);
+     scanf("%lf",&salary);
+    
+    
+ 
+    salary=hour*salary;
+    printf("NUMBER = %d\nSALARY = U$ %.2f\n",Emp_N,salary);
+    
+    
+
+    return 0;
+}
+

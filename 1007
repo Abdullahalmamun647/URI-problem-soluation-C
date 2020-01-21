@@ -1,0 +1,24 @@
+// problem 1007= Difference
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    int  A,B,C,D, Diff;
+   
+     scanf("%d",&A);
+     scanf("%d",&B);
+     scanf("%d",&C);
+     scanf("%d",&D);
+    
+    Diff= (A * B - C * D);
+    printf("DIFERENCA = %d\n",Diff);
+    
+    
+    
+
+    return 0;
+}
+

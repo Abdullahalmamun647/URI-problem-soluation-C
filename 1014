@@ -1,0 +1,19 @@
+// problem 1014= Consumption
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+int main ()
+{
+    int X;
+    double avg, Y;
+    scanf("%d",&X);
+    scanf("%lf",&Y);
+    avg=X/Y;
+    printf("%.3f km/l\n",avg);
+    
+    
+    return 0;
+}

@@ -1,0 +1,23 @@
+// problem 1005= Average 1
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include<stdio.h>
+int main(){
+
+    double A,B,Average;
+   
+    scanf("%lf",&A);
+    scanf("%lf",&B);
+    Average= (A*3.5)+(B*7.5);
+    Average/=11;                // that means like Average=Average/11;
+    
+    
+    
+    printf("MEDIA = %.5f\n",Average);
+    
+
+    return 0;
+}
+

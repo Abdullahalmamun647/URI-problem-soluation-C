@@ -1,0 +1,36 @@
+  
+// problem 1036 = bhaskara’s formula
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+#include <math.h>
+int main ()
+{
+    double a,b,c,X,Y,root;
+    scanf("%lf %lf %lf",&a,&b,&c);
+    
+    
+    root=b*b -4*a*c;
+    root=sqrt(root);
+    
+    if (root>0 && a!=0 )
+    
+    {
+    X= (-b+root)/(2*a);
+    Y= (-b- root)/(2*a);
+        
+        
+        printf("R1 = %.5f\n",X);
+        printf("R2 = %.5f\n",Y);
+    }
+    else
+    {
+        printf("Impossivel calcular\n");
+    }
+    
+    
+    
+    return 0;
+}

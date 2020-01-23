@@ -1,0 +1,47 @@
+// problem 1040 = Average 3
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+int main ()
+
+{
+    double N1,N2,N3,N4,avg,score;
+    scanf("%lf %lf %lf %lf",&N1,&N2,&N3,&N4);
+    
+    avg=(N1*2 + N2*3 +N3*4+N4*1)/(2+3+4+1);
+    printf("Media: %.1f\n",avg);
+    
+    if (avg>=7){
+        printf("Aluno aprovado.\n");
+    }
+    else if (avg<5){
+        printf("Aluno reprovado.\n");
+    }
+    else if(avg>=5 && avg<=6.9)
+    {
+        printf("Aluno em exame.\n");
+        
+        scanf("%lf",&score);
+        printf("Nota do exame: %.1f\n",score);
+        avg= (avg+score)/2;
+        
+
+        
+        if (avg>=5)
+        {
+            printf("Aluno aprovado.\n");
+        }
+        else if (avg<=4.9){
+            printf("Aluno reprovado.\n");
+            
+        }
+        printf("Media final: %.1f\n",avg);
+        
+    
+        
+    }
+    
+    return 0;
+}

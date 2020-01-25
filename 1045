@@ -1,0 +1,60 @@
+// problem 1045 = Triangle Types
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main ()
+{
+    double array[3],new_array[3],temp,A,B,C,D;
+    int i,j;
+
+    for ( i=0;i<3;i++)
+    {
+        scanf("%lf",&array[i]);
+        new_array[i]=array[i];
+    }
+    for ( i=0;i<3;i++)
+    {
+        for( j=0;j<3;j++)
+        {
+            if (array[i]>array[j]){
+                temp=array[i];
+                array[i]=array[j];
+                array[j]=temp;
+            }
+        }
+    }
+
+    A=array[0];
+    B=array[1];
+    C=array[2];
+    
+    D=B*B + C*C;
+  
+    if (A>= B + C){
+        printf("NAO FORMA TRIANGULO\n");
+    }
+    else if (A*A == D){
+        printf("TRIANGULO RETANGULO\n");
+    }
+    else if (A*A > D){
+        printf("TRIANGULO OBTUSANGULO\n");
+    }
+    else if (A*A < D){
+        printf("TRIANGULO ACUTANGULO\n");
+    }
+     if (A==B && B==C){
+        printf("TRIANGULO EQUILATERO\n");
+    }
+    else if (A==B || B==C || C==A ){
+        printf("TRIANGULO ISOSCELES\n");
+    }
+  
+
+    return 0;
+}
+

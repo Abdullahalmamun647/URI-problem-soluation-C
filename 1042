@@ -1,0 +1,43 @@
+// problem 1042 = Simple Sort
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+    int array[3],new_array[3],temp;
+    int i,j;
+    
+    for ( i=0;i<3;i++)
+    {
+        scanf("%d",&array[i]);
+        new_array[i]=array[i];
+    }
+    for ( i=0;i<3;i++)
+    {
+        for( j=0;j<3;j++)
+        {
+            if (array[i]<array[j]){
+                temp=array[i];
+                array[i]=array[j];
+                array[j]=temp;
+            }
+        }
+    }
+    
+    for (i=0;i<3;i++){
+        printf("%d\n",array[i]);
+    }
+    printf("\n");
+        for (i=0;i<3;i++){
+        printf("%d\n",new_array[i]);
+    }
+
+
+    
+    
+    return 0;
+}

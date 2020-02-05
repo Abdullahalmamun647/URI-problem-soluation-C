@@ -1,0 +1,57 @@
+// problem 1048 = Salary Increase
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+
+#include <stdio.h>
+int main ()
+
+{
+    double sl,Ns,Me;
+    int per;
+    char c='%';
+    scanf("%lf",&sl);
+    
+    if (sl<=400.00)
+    {
+        Ns=sl+(sl*15)/100;
+        Me=Ns-sl;
+        per=15;
+        
+        
+    }
+    else if (sl>400.00 && sl<=800.00){
+              Ns=sl+(sl*12)/100;
+              Me=Ns-sl;
+              per=12;
+        
+    }
+    
+    else if (sl>800.00 && sl<=1200.00){
+              Ns=sl+(sl*10)/100;
+              Me=Ns-sl;
+              per=10;
+        
+    }
+    else if (sl>1200.00 && sl<=2000.00){
+              Ns=sl+(sl*7)/100;
+              Me=Ns-sl;
+              per=7;
+        
+    }
+    else {
+              Ns=sl+(sl*4)/100;
+              Me=Ns-sl;
+              per=4;
+        
+    }
+
+    printf("Novo salario: %.2f\n",Ns);
+    printf("Reajuste ganho: %.2f\n",Me);
+    printf("Em percentual: %d %c\n",per,c);
+    
+    
+    
+}
+

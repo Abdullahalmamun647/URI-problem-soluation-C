@@ -1,0 +1,37 @@
+
+// problem 1071 = Sum of Consecutive Odd Numbers I
+// Programmed by: Abdullah Al Mamun
+
+// Lets's start..
+
+#include <stdio.h>
+int main ()
+{
+    int x,y,i=0,sum = 0,aux;
+    scanf("%d",&x);
+    scanf("%d",&y);
+    
+    if(y<x)
+    {
+        aux = x;
+        x = y+1;
+        y = aux;
+    }
+    
+    for(i=x;i<y;i++)
+    {
+        if(i%2!=0){
+            
+            if (i<0){
+                sum -=i*(-1);}
+            else
+            {sum=sum+i;
+            }
+        }
+    }
+    
+    printf("%d\n",sum);
+    
+    
+    return 0;
+}
